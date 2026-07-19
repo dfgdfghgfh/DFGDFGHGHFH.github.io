@@ -1,0 +1,66 @@
+/* 修仙 · 契灵 设定集 自定义样式 */
+
+:root {
+  --cult-bg: #1a1a24;
+  --cult-gold: #c9a059;
+  --cult-jade: #5e8b7c;
+  --cult-purple: #a78bfa;
+  --cult-vermillion: #c04b3d;
+  --cult-parchment: #d4cfc4;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #3d3d5c;
+  --md-accent-fg-color: #a78bfa;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #1a1a24;
+  --md-accent-fg-color: #c9a059;
+}
+
+/* 首页卡片网格 */
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.grid.cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: contents;
+}
+
+.grid.cards > ul > li {
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  padding: 16px;
+  transition: border-color 0.2s;
+}
+
+.grid.cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color);
+}
+
+/* 宗门颜色标记 */
+.sect-tianyuan { border-left-color: #5eb3e8 !important; }
+.sect-jingang { border-left-color: #c04b3d !important; }
+.sect-wanxiang { border-left-color: #5e8b7c !important; }
+.sect-guiyi { border-left-color: #a78bfa !important; }
+.sect-jingyan { border-left-color: #c9a059 !important; }
+
+/* 人物卡片 */
+.character-card {
+  background: var(--md-code-bg-color);
+  border-radius: 0 6px 6px 0;
+  padding: 12px 14px;
+  margin: 8px 0;
+}
+
+/* 地图容器 */
+#map-container svg {
+  display: block;
+}

@@ -1,0 +1,137 @@
+{
+  "_comment": "修仙养成 v0.7 — 世界地图数据。与 全套设定集/02.修仙体系扩展/11_世界地理.md 对齐。",
+  "mapVersion": "1.0",
+  "viewport": { "width": 800, "height": 600, "bgColor": "#1a1a24" },
+  "continents": [
+    { "id": "zhongyu", "name": "中域", "color": "rgba(255,255,255,0.04)", "d": "M100,50 Q400,0 700,50 Q750,300 700,550 Q400,600 100,550 Q50,300 100,50Z" }
+  ],
+  "territories": [
+    {
+      "id": "tianyuan",
+      "name": "天渊山脉",
+      "sect": "天渊宗",
+      "color": "rgba(94,179,232,0.15)",
+      "stroke": "#5eb3e8",
+      "d": "M160,80 Q240,60 320,100 Q340,160 300,200 Q220,220 160,180 Q140,130 160,80Z",
+      "description": "现存宗门中最古老的山脉，以神识灵根闻名。大图书馆存放着修炼界最完整的典籍收藏。"
+    },
+    {
+      "id": "jingang",
+      "name": "金刚岭",
+      "sect": "金刚门",
+      "color": "rgba(192,75,61,0.15)",
+      "stroke": "#c04b3d",
+      "d": "M60,260 Q100,220 160,250 Q180,320 140,380 Q80,400 50,350 Q40,300 60,260Z",
+      "description": "荒凉贫瘠的极端地形区，以体魄修炼闻名。地震频繁，灵脉因地质应力而异常密集。"
+    },
+    {
+      "id": "wanxiang",
+      "name": "万象谷",
+      "sect": "万象阁",
+      "color": "rgba(94,139,124,0.15)",
+      "stroke": "#5e8b7c",
+      "d": "M260,340 Q320,300 400,340 Q420,400 370,460 Q300,480 250,430 Q240,380 260,340Z",
+      "description": "地形多变的巨型山谷，以幻形修炼闻名不夜城是修炼界最大的风格交流中心。"
+    },
+    {
+      "id": "guiyi",
+      "name": "中极山",
+      "sect": "归一教",
+      "color": "rgba(167,139,250,0.15)",
+      "stroke": "#a78bfa",
+      "d": "M380,120 Q440,100 500,130 Q520,190 480,240 Q420,260 380,220 Q360,170 380,120Z",
+      "description": "中域的地理中心，五灵根在此天然均衡。归一教总部所在，均衡碑位于山顶。"
+    },
+    {
+      "id": "jingyan",
+      "name": "净言山",
+      "sect": "净言寺",
+      "color": "rgba(201,160,89,0.15)",
+      "stroke": "#c9a059",
+      "d": "M520,80 Q580,60 640,90 Q660,150 620,190 Q560,200 520,170 Q500,120 520,80Z",
+      "description": "以言灵修炼闻名的安静山脉。不语林的树木能吸收声音，是修炼静默期的圣地。"
+    }
+  ],
+  "regions": [
+    {
+      "id": "sanxiu_wild",
+      "name": "散修荒原",
+      "type": "wilderness",
+      "color": "rgba(255,255,255,0.06)",
+      "stroke": "rgba(255,255,255,0.15)",
+      "d": "M200,280 Q280,260 350,300 Q380,380 320,440 Q240,460 180,400 Q160,320 200,280Z",
+      "description": "宗门领地之间的广阔地带，灵脉稀薄但奇遇率极高。上古遗迹散布其中。"
+    }
+  ],
+  "locations": [
+    { "id": "loc_tianyuan_gate", "name": "天渊宗山门", "territory": "tianyuan", "x": 220, "y": 140, "type": "sect_gate", "sect": "天渊宗", "icon": "🏛️", "description": "天渊宗入口。石阶九千九百级，每级刻一道推演题。", "linkedQuestIds": ["q_tianyuan_01", "q_tianyuan_02"] },
+    { "id": "loc_tianyuan_lib", "name": "大图书馆", "territory": "tianyuan", "x": 250, "y": 120, "type": "landmark", "sect": "天渊宗", "icon": "📚", "description": "修炼界最完整的典籍收藏地。藏书量超过百万卷，包括失传功法的残篇。", "linkedQuestIds": ["q_tianyuan_03"] },
+    { "id": "loc_tianyuan_obs", "name": "观星台", "territory": "tianyuan", "x": 190, "y": 100, "type": "landmark", "sect": "天渊宗", "icon": "🔭", "description": "天渊宗最高处。用于观测织的运动轨迹和天象变化。", "linkedQuestIds": [] },
+    { "id": "loc_jingang_gate", "name": "金刚门山门", "territory": "jingang", "x": 110, "y": 300, "type": "sect_gate", "sect": "金刚门", "icon": "🏛️", "description": "金刚门入口。两座石雕力士像高三十丈，据说若入侵者靠近，石像会活过来。", "linkedQuestIds": ["q_jingang_01"] },
+    { "id": "loc_jingang_wall", "name": "铁壁崖", "territory": "jingang", "x": 130, "y": 330, "type": "landmark", "sect": "金刚门", "icon": "⛰️", "description": "金刚门的极限训练场之一。垂直的岩壁上布满了掌印——每一代弟子留下的。", "linkedQuestIds": ["q_jingang_02"] },
+    { "id": "loc_jingang_forge", "name": "铸体炉", "territory": "jingang", "x": 80, "y": 280, "type": "landmark", "sect": "金刚门", "icon": "🔥", "description": "地心火炉，用于修炼不灭金身的特殊场地。炉内温度足以熔化凡铁。", "linkedQuestIds": [] },
+    { "id": "loc_wanxiang_gate", "name": "万象阁总部", "territory": "wanxiang", "x": 320, "y": 380, "type": "sect_gate", "sect": "万象阁", "icon": "🏛️", "description": "不夜城的核心建筑。每一层是不同的风格主题，从一层到顶层是一部完整的风格进化史。", "linkedQuestIds": ["q_wanxiang_01"] },
+    { "id": "loc_wanxiang_bazaar", "name": "不夜城坊市", "territory": "wanxiang", "x": 350, "y": 400, "type": "city", "sect": "万象阁", "icon": "🏪", "description": "修炼界最大的商业化区域。二十四小时营业，出售功法、秘籍、丹药、法器、服饰。", "linkedQuestIds": ["q_wanxiang_02"] },
+    { "id": "loc_wanxiang_stage", "name": "万象剧场", "territory": "wanxiang", "x": 300, "y": 360, "type": "landmark", "sect": "万象阁", "icon": "🎭", "description": "情境修炼的实景场地。可以模拟从火山到深海到闹市集市任何场景。", "linkedQuestIds": [] },
+    { "id": "loc_guiyi_gate", "name": "归一教道场", "territory": "guiyi", "x": 430, "y": 180, "type": "sect_gate", "sect": "归一教", "icon": "🏛️", "description": "归一教总部。建筑呈完美的圆形对称——五条入口对应五种灵根。", "linkedQuestIds": ["q_guiyi_01", "q_guiyi_02"] },
+    { "id": "loc_guiyi_monument", "name": "均衡碑", "territory": "guiyi", "x": 460, "y": 160, "type": "landmark", "sect": "归一教", "icon": "🗿", "description": "中极山顶的天然石碑。站在碑前可以精确感知自己的五灵根分布。", "linkedQuestIds": ["q_guiyi_03"] },
+    { "id": "loc_jingyan_gate", "name": "净言寺山门", "territory": "jingyan", "x": 560, "y": 130, "type": "sect_gate", "sect": "净言寺", "icon": "🏛️", "description": "净言寺入口。山门上刻着一行字：'想清楚再说。'——没有人知道是谁刻的。", "linkedQuestIds": ["q_jingyan_01"] },
+    { "id": "loc_jingyan_forest", "name": "不语林入口", "territory": "jingyan", "x": 580, "y": 160, "type": "landmark", "sect": "净言寺", "icon": "🌲", "description": "净言寺的静默修炼区。树木能吸收声音——进入林中后万籁俱寂。", "linkedQuestIds": ["q_jingyan_02"] },
+    { "id": "loc_jingyan_tower", "name": "无名石塔", "territory": "jingyan", "x": 540, "y": 100, "type": "landmark", "sect": "净言寺", "icon": "🗼", "description": "不语僧独自修行的石塔。没有门——只有筑基期时从窗口进去，从未出来。", "linkedQuestIds": [] },
+    { "id": "loc_echo_plains", "name": "残响平原", "territory": "sanxiu_wild", "x": 200, "y": 220, "type": "special", "icon": "👻", "description": "上古大战遗址。织上残留着战死修士的意识碎片——残响型契灵在此活跃。", "linkedQuestIds": ["q_cross_01"] },
+    { "id": "loc_bound_forest", "name": "地缚林海", "territory": "sanxiu_wild", "x": 450, "y": 480, "type": "special", "icon": "🌳", "description": "远古森林。每一棵树都与一个地缚灵共生。森林有记忆——拒绝记住的人无法离开。", "linkedQuestIds": [] },
+    { "id": "loc_concept_waste", "name": "概念荒漠", "type": "special", "x": 680, "y": 180, "type": "special", "icon": "🏜️", "description": "织在此处极薄，抽象概念变得不稳定。距离不按空间计算，时间偶尔跳跃。", "linkedQuestIds": ["q_cross_02"] },
+    { "id": "loc_mirror_depths", "name": "镜渊（推测）", "type": "mystery", "x": 620, "y": 350, "type": "mystery", "icon": "🪞", "description": "镜之背面的推测位置。无人证实。多名契灵术修行者报告在附近做了同样的梦。", "linkedQuestIds": [] },
+    { "id": "loc_fabric_rift", "name": "织裂谷", "type": "danger", "x": 700, "y": 430, "type": "danger", "icon": "⚡", "description": "织的结构性损伤区域。契灵从此处泄漏的频率最高。极度危险——也是力量之源。", "linkedQuestIds": ["q_cross_03"] },
+    { "id": "loc_sword_tomb", "name": "剑冢", "type": "dungeon", "x": 100, "y": 380, "sect": "金刚门", "icon": "⚔️", "description": "遍地断剑的秘境。选中一把，两日内拔出——以体魄证明你配得上它。", "linkedQuestIds": [] },
+    { "id": "loc_library_secret", "name": "藏经阁秘境", "type": "dungeon", "x": 280, "y": 100, "sect": "天渊宗", "icon": "📜", "description": "大图书馆深处有一个无尽书架——每取一本书，书架上多出三本。三天内读完指定的古籍。", "linkedQuestIds": [] },
+    { "id": "loc_heart_mirror", "name": "镜中境", "type": "dungeon", "x": 380, "y": 300, "icon": "🪞", "description": "镜中的人会开口——说的全是你对自己说过的最诚实的话。", "linkedQuestIds": [] },
+    { "id": "loc_silence_cave", "name": "沉默石窟", "type": "dungeon", "x": 600, "y": 230, "icon": "🤫", "description": "石窟内禁止出声。三天内只用行动表达——沉默中积蓄的力量超乎想象。", "linkedQuestIds": [] },
+    { "id": "loc_star_sea", "name": "星宿海", "type": "dungeon", "x": 500, "y": 300, "icon": "⭐", "description": "七晚辨认七颗星——每颗对应一种灵根的运转规律。", "linkedQuestIds": [] },
+    { "id": "loc_heart_flow", "name": "心流瀑布", "type": "dungeon", "x": 330, "y": 500, "icon": "💧", "description": "连续五天专精一项修炼——水流会告诉你心流何时到来。", "linkedQuestIds": [] },
+    { "id": "loc_butterfly", "name": "蝴蝶谷", "type": "dungeon", "x": 420, "y": 530, "icon": "🦋", "description": "庄周梦醒处。最后一道门在蝴蝶振翅中打开——收集率90%以上方可进入。", "linkedQuestIds": [] },
+    { "id": "loc_mine", "name": "灵石矿脉", "type": "encounter", "x": 230, "y": 280, "icon": "💎", "description": "废弃的灵石矿脉深处藏着一个更大的矿脉——但入口被前任修士的残念封印了。", "linkedQuestIds": [] },
+    { "id": "loc_forum", "name": "稷下学宫遗址", "type": "ruins", "x": 500, "y": 380, "icon": "🏫", "description": "上古论辩场的废墟。英灵的残响仍在进行着没有尽头的辩论。", "linkedQuestIds": [] }
+  ],
+  "connections": [
+    { "from": "loc_tianyuan_gate", "to": "loc_tianyuan_lib", "label": "藏书之路" },
+    { "from": "loc_tianyuan_gate", "to": "loc_tianyuan_obs", "label": "登天阶" },
+    { "from": "loc_jingang_gate", "to": "loc_jingang_wall", "label": "试炼之路" },
+    { "from": "loc_jingang_gate", "to": "loc_jingang_forge", "label": "地火通道" },
+    { "from": "loc_wanxiang_gate", "to": "loc_wanxiang_bazaar", "label": "不夜城主街" },
+    { "from": "loc_wanxiang_gate", "to": "loc_wanxiang_stage", "label": "剧场走廊" },
+    { "from": "loc_guiyi_gate", "to": "loc_guiyi_monument", "label": "登顶道" },
+    { "from": "loc_jingyan_gate", "to": "loc_jingyan_forest", "label": "静默之路" },
+    { "from": "loc_jingyan_gate", "to": "loc_jingyan_tower", "label": "孤峰径" },
+    { "from": "loc_tianyuan_lib", "to": "loc_echo_plains", "label": "古战场道" },
+    { "from": "loc_echo_plains", "to": "loc_mine", "label": "矿道" },
+    { "from": "loc_heart_mirror", "to": "loc_mirror_depths", "label": "镜之路（推测）", "dashed": true },
+    { "from": "loc_fabric_rift", "to": "loc_concept_waste", "label": "荒原边缘" },
+    { "from": "loc_wanxiang_bazaar", "to": "loc_heart_flow", "label": "商道南行" },
+    { "from": "loc_jingyan_forest", "to": "loc_silence_cave", "label": "山林小道" },
+    { "from": "loc_butterfly", "to": "loc_forum", "label": "古径" },
+    { "from": "loc_library_secret", "to": "loc_star_sea", "label": "星图指引" },
+    { "from": "loc_guiyi_gate", "to": "loc_heart_mirror", "label": "均衡之道" },
+    { "from": "loc_tianyuan_gate", "to": "loc_jingang_gate", "label": "商道北线" },
+    { "from": "loc_wanxiang_gate", "to": "loc_guiyi_gate", "label": "中域大道" },
+    { "from": "loc_jingyan_gate", "to": "loc_wanxiang_gate", "label": "山河走廊" },
+    { "from": "loc_jingang_gate", "to": "loc_mine", "label": "矿道北口" }
+  ],
+  "quests": [
+    { "id": "q_tianyuan_01", "name": "思辨入门", "giverId": "chunli", "locationId": "loc_tianyuan_gate", "type": "sect", "sect": "天渊宗", "minRealm": "mortal", "description": "参加一次思辨试炼，在辩论中证明自己的逻辑能力。", "rewards": "天渊宗声望+10, 神识+2", "linkTo": "12_宗门功法.md#思辨试炼" },
+    { "id": "q_tianyuan_02", "name": "残缺的论证", "giverId": "lu_mingyi", "locationId": "loc_tianyuan_lib", "type": "sect", "sect": "天渊宗", "minRealm": "qi_refining", "description": "大图书馆发现了一份不完整的上古推演手稿。需要补全中间的缺失步骤。", "rewards": "洞察+5, 秘籍残篇", "linkTo": "14_宗门人物志.md#陆明夷" },
+    { "id": "q_tianyuan_03", "name": "书页之外", "giverId": "qiu_li", "locationId": "loc_tianyuan_lib", "type": "sect", "sect": "天渊宗", "minRealm": "foundation", "description": "秋骊怀疑大图书馆中有一本'不存在'的书——被从所有目录中删除了，但仍在馆内某处。找到它。", "rewards": "道心+5, 天渊推演残篇", "linkTo": "14_宗门人物志.md#秋骊" },
+    { "id": "q_jingang_01", "name": "铁壁试炼", "giverId": "tie_ran", "locationId": "loc_jingang_gate", "type": "sect", "sect": "金刚门", "minRealm": "mortal", "description": "在铁壁崖完成一次极限突破训练。用身体证明你愿意走多远。", "rewards": "金刚门声望+10, 体魄+3", "linkTo": "12_宗门功法.md#极限突破" },
+    { "id": "q_jingang_02", "name": "不碎之志", "giverId": "zhong_shanyue", "locationId": "loc_jingang_wall", "type": "sect", "sect": "金刚门", "minRealm": "qi_refining", "description": "连续七日在铁壁崖承受地磁灵压，不中断、不求助。", "rewards": "钢体+10, 金刚门声望+20", "linkTo": "14_宗门人物志.md#钟山岳" },
+    { "id": "q_wanxiang_01", "name": "风格挑战", "giverId": "jin_shu", "locationId": "loc_wanxiang_gate", "type": "sect", "sect": "万象阁", "minRealm": "mortal", "description": "接受一次情境修炼——在完全陌生的场景中找到自己的风格。", "rewards": "万象阁声望+10, 幻形+2", "linkTo": "12_宗门功法.md#情境修炼" },
+    { "id": "q_wanxiang_02", "name": "坊市暗流", "giverId": "duan_qingya", "locationId": "loc_wanxiang_bazaar", "type": "sect", "sect": "万象阁", "minRealm": "foundation", "description": "有人在坊市中出售伪造的秘籍。在不夜城找到造假者，用你的判断力分辨真伪。", "rewards": "万象阁声望+15, 灵石x100", "linkTo": "14_宗门人物志.md#段青崖" },
+    { "id": "q_guiyi_01", "name": "均衡校准", "giverId": "taihe_zi", "locationId": "loc_guiyi_gate", "type": "sect", "sect": "归一教", "minRealm": "mortal", "description": "在均衡碑前完成灵根测试，然后根据结果调整你的修炼计划。", "rewards": "归一教声望+10, 五灵根中最弱一项+1", "linkTo": "12_宗门功法.md#感知校准" },
+    { "id": "q_guiyi_02", "name": "失衡之症", "giverId": "sikong_jian", "locationId": "loc_guiyi_gate", "type": "sect", "sect": "归一教", "minRealm": "qi_refining", "description": "附近村落有人因灵根严重偏斜导致走火入魔。前往诊断并帮助其恢复平衡。", "rewards": "归一教声望+15, 道心+3", "linkTo": "14_宗门人物志.md#司空鉴" },
+    { "id": "q_guiyi_03", "name": "纯粹之问", "giverId": "yin_buping", "locationId": "loc_guiyi_monument", "type": "sect", "sect": "归一教", "minRealm": "core_formation", "description": "殷不平认为所有功法都是'人工的辅助工具'。与你辩论：功法是否削弱了修炼的本质？", "rewards": "道心+5, 归一教声望+20", "linkTo": "14_宗门人物志.md#殷不平" },
+    { "id": "q_jingyan_01", "name": "沉默的第一日", "giverId": "blessed_silence", "locationId": "loc_jingyan_gate", "type": "sect", "sect": "净言寺", "minRealm": "mortal", "description": "在不语林中完成一次为期三天的静默期。不开口、不书写、不传信。", "rewards": "净言寺声望+10, 言灵+2", "linkTo": "12_宗门功法.md#静默期" },
+    { "id": "q_jingyan_02", "name": "一句真言", "giverId": "shi_shuo", "locationId": "loc_jingyan_forest", "type": "sect", "sect": "净言寺", "minRealm": "qi_refining", "description": "释说说：'你需要找到一句非说不可的话。找到它，对我说。就够了。'", "rewards": "净言寺声望+15, 言诺强度+1", "linkTo": "14_宗门人物志.md#释说" },
+    { "id": "q_cross_01", "name": "残响的低语", "giverId": "tan_buyu", "locationId": "loc_echo_plains", "type": "cross", "minRealm": "foundation", "description": "残响平原深处有一个声音在重复同一句话。檀不语认为这是一个未被记录的契灵——但需要人去确认。", "rewards": "契灵术线索, 神识+3", "linkTo": "14_宗门人物志.md#檀不语" },
+    { "id": "q_cross_02", "name": "荒漠中的概念", "giverId": "tan_buyu", "locationId": "loc_concept_waste", "type": "cross", "minRealm": "core_formation", "description": "概念荒漠中出现了一个新的概念体。它的存在本身就是一个新的抽象——需要命名和理解。", "rewards": "概念体契约线索, 道心+4", "linkTo": "03.全新异能体系/03_契约类型.md#概念体" },
+    { "id": "q_cross_03", "name": "裂隙边缘", "giverId": "qin_buyi", "locationId": "loc_fabric_rift", "type": "cross", "minRealm": "core_formation", "description": "织裂谷边缘发现了一个异常稳定的契约锚点。秦不疑需要人陪同调查——不动手，只观察和记录。", "rewards": "天渊宗+金刚门声望各+10, 洞察+3", "linkTo": "04.跨体系联动/01_世界观统一.md" }
+  ]
+}

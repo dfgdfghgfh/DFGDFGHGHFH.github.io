@@ -1,0 +1,101 @@
+site_name: 修仙 · 契灵 设定集
+site_description: 一套修仙与契灵术共存的完整世界设定
+site_author: 零
+
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: indigo
+    accent: deep purple
+  font:
+    text: Noto Serif SC
+    code: JetBrains Mono
+  icon:
+    logo: material/book-open-variant
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.tabs.link
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+
+plugins:
+  - search:
+      lang: zh
+  - git-revision-date-localized:
+      enabled: false
+
+nav:
+  - 🏠 首页: index.md
+  - 📖 设定集:
+      - 项目概览: 设定集/01.系统/项目概览.md
+      - 世界观底层规则: 设定集/01.系统/世界观底层规则.md
+      - 术语对照表: 设定集/01.系统/术语对照表.md
+      - 跨体系联动总纲: 设定集/01.系统/跨体系联动总纲.md
+      - 修仙体系:
+          - 概述: 设定集/02.修仙体系扩展/00_概述.md
+          - 世界历史: 设定集/02.修仙体系扩展/01_世界历史.md
+          - 八大境界详考: 设定集/02.修仙体系扩展/02_八大境界详考.md
+          - 五灵根源流: 设定集/02.修仙体系扩展/03_五灵根源流.md
+          - 镜之起源: 设定集/02.修仙体系扩展/04_镜之起源.md
+          - 天道与法则: 设定集/02.修仙体系扩展/05_天道与法则.md
+          - 散修路: 设定集/02.修仙体系扩展/06_散修路.md
+          - 道心与劫: 设定集/02.修仙体系扩展/07_道心与劫.md
+          - 宗门与势力: 设定集/02.修仙体系扩展/08_宗门与势力.md
+          - 神话与传说: 设定集/02.修仙体系扩展/09_神话与传说.md
+          - 未解之谜: 设定集/02.修仙体系扩展/10_未解之谜.md
+          - 世界地理: 设定集/02.修仙体系扩展/11_世界地理.md
+          - 宗门功法: 设定集/02.修仙体系扩展/12_宗门功法.md
+          - 修炼路径: 设定集/02.修仙体系扩展/13_修炼路径.md
+          - 宗门人物志: 设定集/02.修仙体系扩展/14_宗门人物志.md
+      - 契灵术体系:
+          - 概述: 设定集/03.全新异能体系/00_概述.md
+          - 体系起源: 设定集/03.全新异能体系/01_体系起源.md
+          - 核心机制: 设定集/03.全新异能体系/02_核心机制.md
+          - 契约类型: 设定集/03.全新异能体系/03_契约类型.md
+          - 代价与反噬: 设定集/03.全新异能体系/04_代价与反噬.md
+          - 契灵图鉴: 设定集/03.全新异能体系/05_契灵图鉴.md
+          - 能力树: 设定集/03.全新异能体系/06_能力树.md
+          - 仪式与规则: 设定集/03.全新异能体系/07_仪式与规则.md
+          - 代表人物: 设定集/03.全新异能体系/08_代表人物.md
+          - 禁忌与限制: 设定集/03.全新异能体系/09_禁忌与限制.md
+          - 与修仙的区别: 设定集/03.全新异能体系/10_与修仙的区别.md
+          - 契灵地理: 设定集/03.全新异能体系/11_契灵地理.md
+          - 契约路径: 设定集/03.全新异能体系/12_契约路径.md
+      - 跨体系联动:
+          - 联动总纲: 设定集/04.跨体系联动/00_联动总纲.md
+          - 世界观统一: 设定集/04.跨体系联动/01_世界观统一.md
+          - 兼容性规则: 设定集/04.跨体系联动/02_兼容性规则.md
+          - 双修路径: 设定集/04.跨体系联动/03_双修路径.md
+          - 冲突与对抗: 设定集/04.跨体系联动/04_冲突与对抗.md
+          - 转换与借用: 设定集/04.跨体系联动/05_转换与借用.md
+          - 平衡性规则: 设定集/04.跨体系联动/06_平衡性规则.md
+          - 融合技与连携: 设定集/04.跨体系联动/07_融合技与连携.md
+          - 世界观故事: 设定集/04.跨体系联动/08_世界观故事.md
+  - 🗺️ 世界地图: 地图/index.md
+  - 👥 人物谱: 人物/index.md

@@ -1,0 +1,143 @@
+{
+  "_comment": "修仙养成 v0.7 — 人物志数据。与 全套设定集/02.修仙体系扩展/14_宗门人物志.md 对齐。",
+  "version": "1.0",
+  "characters": [
+    { "id": "qiu_li", "name": "秋骊", "title": "思辨派长老", "sect": "天渊宗", "realm": "化神", "locationId": "loc_tianyuan_lib", "avatar": "📖", "description": "天渊宗思辨派代表人物。以'三年不出门，出门破三境'闻名。化神期闭关三年，只读书、思辨、写札记，出关后连续突破三层。她认为'如果你不能清晰地写出来，你就不算真正理解它。'秋骊也是极少数能在战斗中短暂使用道之镜而不受损的修士。", "personality": "深邃、锐利、对废话零容忍。她不是不近人情——她只是认为'不精确的表述'是对世界的不尊重。", "affinity": 60, "questIds": ["q_tianyuan_03"],
+      "relationships": [
+        { "targetId": "lu_mingyi", "type": "同门竞争", "description": "思辨派与考据派的学术竞争。私下互相尊重但不承认。" },
+        { "targetId": "jin_shu", "type": "旧友", "description": "年轻时结伴游历三年，至今保持通信。" },
+        { "targetId": "shang_shixu", "type": "师徒", "description": "亲自收录的弟子，看到年轻时的自己。" }
+      ] },
+    { "id": "lu_mingyi", "name": "陆明夷", "title": "考据派长老", "sect": "天渊宗", "realm": "金丹", "locationId": "loc_tianyuan_lib", "avatar": "📜", "description": "天渊宗考据派领袖、大图书馆首席文献官。花了三百年读了约40%的藏书，并写了一部索引——花了两百年，从不让人进入他的索引室。他说'秋骊说知识是用来思考的。我说知识是用来保存的。思考的人会死。保存的书不会。'", "personality": "缜密、多疑、对新想法持怀疑态度。和书相处的时间比和人相处的时间多得多。", "affinity": 40, "questIds": ["q_tianyuan_02"],
+      "relationships": [
+        { "targetId": "qiu_li", "type": "同门竞争", "description": "学术路线分歧，但共同维护天渊宗的存续。" },
+        { "targetId": "sikong_jian", "type": "学术交流", "description": "定期交换数据与文献。" }
+      ] },
+    { "id": "qin_buyi", "name": "秦不疑", "title": "藏锋阁主", "sect": "天渊宗", "realm": "金丹", "locationId": "loc_tianyuan_gate", "avatar": "⚔️", "description": "天渊宗唯一主修战斗的修士。藏锋阁是天渊宗专门处理'需要用武力解决'的问题的部门。他自嘲是天渊宗的'清洁工'——清除对话无法解决的问题。他加入天渊宗较晚（金丹后期转入），实战经验丰富，用洞察的方式是其他天渊宗修士从未想过的。", "personality": "务实、寡言、对学术争论不耐烦，但尊重结果。", "affinity": 70, "questIds": ["q_cross_03"],
+      "relationships": [
+        { "targetId": "qiu_li", "type": "互相信任", "description": "尽管性格迥异，秋骊认可秦不疑的实战判断力。" },
+        { "targetId": "tie_ran", "type": "战友情", "description": "曾共同对抗外敌，在战场上建立了超越宗门的信任。" },
+        { "targetId": "zhong_shanyue", "type": "相互尊重", "description": "两位务实者的低调共鸣。" }
+      ] },
+    { "id": "shang_shixu", "name": "商时序", "title": "新秀弟子", "sect": "天渊宗", "realm": "筑基", "locationId": "loc_tianyuan_obs", "avatar": "🔭", "description": "天渊宗最年轻的核心弟子。散修出身，在野外独立解读了一处上古遗址的残篇后被秋骊收录。天渊推演的天才——筑基期就能进行金丹期水平的推演，洞察积累速度是同龄人的三倍。但体魄、幻形严重滞后——她存在严重的偏科。她的名言：'为什么要感受灵气？灵气就是数据。'", "personality": "聪慧但社交笨拙，在抽象中游刃有余，在人情世故中举步维艰。", "affinity": 30, "questIds": [],
+      "relationships": [
+        { "targetId": "qiu_li", "type": "师徒", "description": "秋骊的弟子，两人以同样的方式与世界错位。" },
+        { "targetId": "shang_shixu", "type": "镜像", "description": "镜中我——她用数据理解世界的方式是观察记录者的缩影。" }
+      ] },
+    { "id": "wei_jiezhou", "name": "卫芥舟", "title": "天渊宗宗主", "sect": "天渊宗", "realm": "元婴", "locationId": "loc_tianyuan_gate", "avatar": "🏛️", "description": "天渊宗现任宗主，考据派出身。他不像秋骊那样锋芒毕露——他的管理风格是调和型的。他花了二十年平衡思辨派和考据派之间的关系。他说：'一个只能吵架的宗门活不长。一个不吵架的宗门不需要活着。'", "personality": "温和、包容、在学术上保持中立但在管理上果断。", "affinity": 50, "questIds": [],
+      "relationships": [
+        { "targetId": "qiu_li", "type": "上下级", "description": "尊重秋骊的能力，偶尔需要控制她的锋芒。" },
+        { "targetId": "lu_mingyi", "type": "旧识", "description": "考据派出身，理解陆明夷的执着。" },
+        { "targetId": "taihe_zi", "type": "旧友", "description": "年轻时曾与太和子同行游历。" }
+      ] },
+    { "id": "zhong_shanyue", "name": "钟山岳", "title": "金刚门门主", "sect": "金刚门", "realm": "化神", "locationId": "loc_jingang_gate", "avatar": "🏛️", "description": "金刚门现任门主。他在织上的轨迹是一条直线——这意味着他在三百年的修炼中没有偏离过自己的道路一次。他的训练方式与铁髯不同——他不'逼迫'弟子，他'等'弟子自己做出选择。他说：'我可以告诉你一百种变强的方法，但只有你自己找到的那种才算数。'", "personality": "极度沉稳、话少，每句话都经过深思。", "affinity": 65, "questIds": ["q_jingang_02"],
+      "relationships": [
+        { "targetId": "tie_ran", "type": "师徒兼同事", "description": "铁髯是他的第一位弟子，现在是护法。信任但不纵容。" },
+        { "targetId": "qin_buyi", "type": "相互尊重", "description": "两位务实者之间无需多言的尊重。" },
+        { "targetId": "shi_po", "type": "老友", "description": "石婆婆是金刚门唯一能让他笑的人。" }
+      ] },
+    { "id": "tie_ran", "name": "铁髯", "title": "护法·体术总教练", "sect": "金刚门", "realm": "金丹", "locationId": "loc_jingang_wall", "avatar": "💪", "description": "金刚门现任体术总教练，以'暴力教学'闻名。训练方法退学率40%，但留下的弟子突破率超过90%。他的名言被刻在极限训练场入口。他认为身体在安全环境中永远不会真正突破——只有当你意识到没有退路时，身体才会释放最终储备。", "personality": "粗犷、直接、对'放弃'这个词过敏，但对坚持下来的弟子极其忠诚。", "affinity": 55, "questIds": ["q_jingang_01"],
+      "relationships": [
+        { "targetId": "zhong_shanyue", "type": "师徒兼同事", "description": "钟山岳的第一位弟子，也是最忠诚的执行者。" },
+        { "targetId": "qin_buyi", "type": "战友情", "description": "战场上建立的信任超越宗门边界。" },
+        { "targetId": "mu_tie", "type": "前任弟子", "description": "穆铁离开时铁髯没有挽留——但那是他唯一一次怀疑自己的教学方法。" }
+      ] },
+    { "id": "shi_po", "name": "石婆婆", "title": "医堂堂主", "sect": "金刚门", "realm": "元婴", "locationId": "loc_jingang_forge", "avatar": "🏥", "description": "金刚门医堂堂主，也是宗门内唯一一个不以暴力闻名的人。她的工作是修复被极限训练破坏的身体——她说：'铁髯负责拆，我负责装。我们是修炼界的流水线。'她的医术是修炼界最好的之一——因为金刚门的病人比其他宗门的多得多。", "personality": "慈祥中带着犀利，对不爱惜身体的弟子态度严厉。", "affinity": 75, "questIds": [],
+      "relationships": [
+        { "targetId": "tie_ran", "type": "合作关系", "description": "'他拆，我装'——互不可缺的一对。" },
+        { "targetId": "zhong_shanyue", "type": "老友", "description": "金刚门唯一能让钟山岳笑的人。" },
+        { "targetId": "po_nuo", "type": "医治", "description": "曾治疗过破诺的咒痕——虽然言灵反噬不是她的专长。" }
+      ] },
+    { "id": "mu_tie", "name": "穆铁", "title": "前金刚门弟子·现散修", "sect": "金刚门", "realm": "金丹", "locationId": "loc_sword_tomb", "avatar": "🥾", "description": "前金刚门核心弟子，金丹期选择离开宗门成为散修。不是因为冲突——是因为他发现金刚门的哲学不适合自己。他说：'金刚门教我如何承受一切。但没有人教我如何选择承受什么。这个答案我必须自己去找。'他现在是散修，与金刚门保持良好关系，偶尔回来探望。", "personality": "内省、独立、不后悔自己的选择。", "affinity": 45, "questIds": [],
+      "relationships": [
+        { "targetId": "tie_ran", "type": "前任师徒", "description": "铁髯没有挽留他，但穆铁的离开让铁髯重新思考了自己的教学。" },
+        { "targetId": "zhong_shanyue", "type": "前宗门关系", "description": "钟山岳尊重他的选择，说'金刚门不怕人走，怕人不回来。他回来了。'。" }
+      ] },
+    { "id": "jin_shu", "name": "锦书", "title": "万象阁阁主", "sect": "万象阁", "realm": "元婴", "locationId": "loc_wanxiang_gate", "avatar": "👘", "description": "万象阁现任阁主，以'一年三百六十五天不重复穿搭'闻名修炼界。她认为每日穿搭是修炼的一部分——'我不穿适合我的衣服，我穿我想成为什么样的人的衣服。'她将万象阁从一个小型风格坊发展为大型宗门。", "personality": "优雅、变化多端、你永远无法预测她下一秒的状态。", "affinity": 60, "questIds": ["q_wanxiang_01"],
+      "relationships": [
+        { "targetId": "qiu_li", "type": "旧友", "description": "年轻时结伴游历的密友，至今保持通信。" },
+        { "targetId": "hua_ying", "type": "合作伙伴", "description": "花影是她的首席情境设计师——两人共同塑造了万象阁的教育体系。" },
+        { "targetId": "duan_qingya", "type": "上下级", "description": "段青崖管理商业线，锦书专注于修炼和风格哲学。" }
+      ] },
+    { "id": "hua_ying", "name": "花影", "title": "首席情境师", "sect": "万象阁", "realm": "金丹", "locationId": "loc_wanxiang_stage", "avatar": "🎭", "description": "万象阁首席情境师。他负责设计和导演所有情境修炼的场景——他称之为'在安全中制造真实的危险'。他本身是万象阁最好的演员之一，但他的真正天赋是理解'什么场景能让人突破舒适区'。他说：'真实的修炼不是你知道自己在修炼的时候——是你忘记自己在修炼的时候。'", "personality": "创意充沛、善于观察、极度敏感于他人的状态变化。", "affinity": 55, "questIds": [],
+      "relationships": [
+        { "targetId": "jin_shu", "type": "合作伙伴", "description": "两人共同构建万象阁的教育体系。" },
+        { "targetId": "su_nian", "type": "观察对象", "description": "花影注意到苏念的变化速度超过了健康限度——但苏念没有听他的警告。" }
+      ] },
+    { "id": "duan_qingya", "name": "段青崖", "title": "商业总监", "sect": "万象阁", "realm": "金丹", "locationId": "loc_wanxiang_bazaar", "avatar": "💰", "description": "万象阁商业线的实际管理者。他负责不夜城的商业模式——咨询服务、风格课程、穿搭教程——这些付费服务使万象阁成为最富裕的宗门。他不是修炼天才，但他是商业天才。他说：'修炼需要资源。资源需要钱。我不觉得谈钱辱没了修炼——我觉得没钱才会辱没修炼。'", "personality": "精明、务实、在不夜城的商业谈判中从不吃亏。", "affinity": 35, "questIds": ["q_wanxiang_02"],
+      "relationships": [
+        { "targetId": "jin_shu", "type": "上下级", "description": "锦书负责方向，段青崖负责执行和盈利。" },
+        { "targetId": "su_nian", "type": "雇佣关系", "description": "苏念有时为段青崖做形象顾问。" },
+        { "targetId": "lu_mingyi", "type": "商业往来", "description": "万象阁向天渊宗购买文献复制权，段青崖与陆明夷打交道。" }
+      ] },
+    { "id": "su_nian", "name": "苏念", "title": "迷失者", "sect": "万象阁", "realm": "筑基", "locationId": "loc_wanxiang_bazaar", "avatar": "🌀", "description": "万象阁哲学黑暗面的活案例。她曾是万象阁最有天赋的弟子——姿态切换的天才——但她在变化中失去了自己的核心。她现在可以在一炷香内切换二十种风格，但如果你问她'你喜欢什么？'——她答不上来。她说：'我可以成为任何人。但我不知道不成为别人的时候，我是谁。'", "personality": "表面多彩、内在空洞。在找寻自我的过程中挣扎。", "affinity": 25, "questIds": [],
+      "relationships": [
+        { "targetId": "hua_ying", "type": "被观察者", "description": "花影曾警告她变化过快会失去自我。她没有听。" },
+        { "targetId": "jing_zhu", "type": "治愈尝试", "description": "净言寺的静竹曾尝试用'止语'帮助她找回内核。" }
+      ] },
+    { "id": "tan_buyu", "name": "檀不语", "title": "契灵形态分类师", "sect": "万象阁", "realm": "金丹", "locationId": "loc_wanxiang_gate", "avatar": "🔮", "description": "万象阁中对契灵术持审美性兴趣的研究者。他整理了修炼界第一套'契灵形态分类学'——从美学角度而非力量角度对契灵进行分类。他本人不是契灵术修行者，但他说：'我不需要与契灵签订契约来欣赏它们的存在方式——就像我不需要成为鸟来欣赏鸟的飞行。'", "personality": "好奇、不设边界、在学术上开放到让其他宗门不安。", "affinity": 50, "questIds": ["q_cross_01", "q_cross_02"],
+      "relationships": [
+        { "targetId": "cheng_xin", "type": "跨领域合作", "description": "与净言寺澄心合作研究契约语言与言灵的关系。" },
+        { "targetId": "a_qi", "type": "信息源", "description": "从残响平原的偶遇中获取第一手契灵数据。" }
+      ] },
+    { "id": "taihe_zi", "name": "太和子", "title": "归一教宗主", "sect": "归一教", "realm": "大乘", "locationId": "loc_guiyi_monument", "avatar": "☯", "description": "修炼界已知最年轻的大乘修士——以'不修功法'闻名：一生中只修炼了基础功法，没有修习任何高阶功法。他的理论是'五灵根修炼到位了，功法自然生成。'成为宗主后仍然每天完成至少一个均衡试炼。他说：'归一不是一种状态，是一种维持。你停下维持的那一刻，你就已经开始回归偏斜。'", "personality": "平静、深邃、言语简洁到近乎寡言。和大地一样稳定。", "affinity": 80, "questIds": ["q_guiyi_01"],
+      "relationships": [
+        { "targetId": "wei_jiezhou", "type": "旧友", "description": "年轻时同行游历的朋友。" },
+        { "targetId": "blessed_silence", "type": "互相尊重", "description": "两位最高境界修行者之间不需要语言的默契。" },
+        { "targetId": "yin_buping", "type": "包容", "description": "太和子允许殷不平在教内公开批评他的理念——'归一教的包容包括包容反对者。'" }
+      ] },
+    { "id": "yin_buping", "name": "殷不平", "title": "纯粹派领袖", "sect": "归一教", "realm": "化神", "locationId": "loc_guiyi_gate", "avatar": "⚖️", "description": "归一教内部激进路线'纯粹派'的领袖。他主张废除所有功法，只用基础的每日修炼来修行。他认为'功法是人工的辅助工具，真正的修炼应该是自然的。'他的言论在归一教内部备受争议，但太和子允许他继续说下去——'归一教的包容包括包容反对者。'", "personality": "激进、真诚、对自己的理念毫不妥协。", "affinity": 30, "questIds": ["q_guiyi_03"],
+      "relationships": [
+        { "targetId": "taihe_zi", "type": "理念对立", "description": "殷不平尊重太和子的境界，但认为他'没有选择与功法彻底决裂'是唯一的缺憾。" },
+        { "targetId": "qin_che", "type": "理念对立", "description": "秦澈是功法大师——殷不平认为他'走错了路'。" }
+      ] },
+    { "id": "qin_che", "name": "秦澈", "title": "功法大师", "sect": "归一教", "realm": "化神", "locationId": "loc_guiyi_gate", "avatar": "📖", "description": "归一教功法派领袖。与殷不平完全相反——他认为功法是经过数万年验证的'修炼捷径'，拒绝它们是傲慢。他说：'殷不平说功法是拐杖。我说不是拐杖——是地图。你可以不靠地图走路，但你不会知道哪条路前面是悬崖。'", "personality": "自信、博学、对反对者缺乏耐心。", "affinity": 45, "questIds": [],
+      "relationships": [
+        { "targetId": "yin_buping", "type": "理念对立", "description": "两人在同一宗门内代表着无法调和的两极。" },
+        { "targetId": "qiu_li", "type": "学术交流", "description": "在功法理论上常有书信往来。" }
+      ] },
+    { "id": "sikong_jian", "name": "司空鉴", "title": "数据收集官", "sect": "归一教", "realm": "金丹", "locationId": "loc_guiyi_gate", "avatar": "📊", "description": "归一教散修灵根测试项目的负责人。他常年在散修荒原各处设立免费灵根测试点——不是公益，是收集数据。他拥有修炼界最大规模的灵根分布数据集，他的报告预示了灵脉分布的自然变化趋势。他说：'免费的测试是最贵的数据——因为被测试者不会告诉你他们想要什么答案。'", "personality": "数据驱动、少言、在社交中显得冷淡但对自己的工作充满热情。", "affinity": 40, "questIds": ["q_guiyi_02"],
+      "relationships": [
+        { "targetId": "lu_mingyi", "type": "学术交流", "description": "定期交换文献与数据。" },
+        { "targetId": "lan_guan_yu", "type": "合作", "description": "司空鉴提供数据，蓝观鱼将其记录为历史。" }
+      ] },
+    { "id": "blessed_silence", "name": "不语僧", "title": "净言寺首座", "sect": "净言寺", "realm": "渡劫", "locationId": "loc_jingyan_tower", "avatar": "🧘", "description": "净言寺唯一一个终身不语者。他在筑基期后不再开口说话——不是不能，是不再需要。他通过书写和手势交流。有人说他失去了语言能力，但认识他的人说：'他不是不能说。他是在保存力量。他的沉默是金口玉言的前奏。'他自筑基期后没有中断过静默期——他活了多少年，就沉默了多久。", "personality": "极度安静、温和、不需要语言来表达自己的存在。", "affinity": 90, "questIds": [],
+      "relationships": [
+        { "targetId": "taihe_zi", "type": "互相尊重", "description": "两位最高境界修行者之间的默契。" },
+        { "targetId": "shi_shuo", "type": "互补", "description": "不语僧是沉默的极致，释说是言语的极致。两者证明了净言寺哲学的宽度。" }
+      ] },
+    { "id": "shi_shuo", "name": "释说", "title": "说僧", "sect": "净言寺", "realm": "元婴", "locationId": "loc_jingyan_gate", "avatar": "🗣️", "description": "净言寺的'说僧'——与不语僧形成完全对照。他相信语言的力量不是通过沉默来积累的，而是通过正确的使用来锻炼的。他每天都在说话——但每一句都经过精确的筛选。他说：'不语僧证明了沉默的力量。我是来证明语言的力量。这两件事不矛盾——它们是同一枚硬币的两面。'", "personality": "表达精准、善于交流、在需要的时候也可以非常安静。", "affinity": 65, "questIds": ["q_jingyan_02"],
+      "relationships": [
+        { "targetId": "blessed_silence", "type": "互补", "description": "证明净言寺哲学宽度的一体两面。" },
+        { "targetId": "cheng_xin", "type": "同门", "description": "与澄心合作研究言灵在契约中的语言学结构。" }
+      ] },
+    { "id": "po_nuo", "name": "破诺", "title": "违诺者", "sect": "净言寺", "realm": "金丹", "locationId": "loc_jingyan_forest", "avatar": "⚠️", "description": "净言寺中唯一公开承认自己违背过言诺的修士。他脸上有一道从额头到下颌的咒痕——不是战斗伤，是言诺反噬留下的。他违背了一个关于'永远不说谎'的诺言——为了保护一个人。他说：'我从不后悔。但如果让我再做一次选择——我还是会违背。只是我会准备一个更好的谎言。'", "personality": "背负着可见的代价但从未试图隐藏它。平静中带着一丝沉重。", "affinity": 35, "questIds": [],
+      "relationships": [
+        { "targetId": "shi_po", "type": "被医治", "description": "石婆婆曾治疗他的反噬伤势——言灵反噬不是她的专长，但她尽力了。" },
+        { "targetId": "jing_zhu", "type": "守律者的对立面", "description": "破诺是静竹严格遵守每条戒律的活生生的反面教材。" }
+      ] },
+    { "id": "ru_nian", "name": "如念", "title": "多话弟子", "sect": "净言寺", "realm": "炼气", "locationId": "loc_jingyan_gate", "avatar": "💬", "description": "净言寺最年轻的弟子——但她有一个问题：她话太多了。她加入净言寺是因为被言灵的哲学吸引，但她发现净言寺的'沉默文化'对她来说是最大的考验。她不是在抗拒——她是在挣扎。她说：'我知道应该少说话。但我的想法太多了，它们在我脑子里挤来挤去，我不说出来它们会爆炸。'", "personality": "热情、率真、在需要安静的场合总是忍不住。", "affinity": 20, "questIds": [],
+      "relationships": [
+        { "targetId": "shi_shuo", "type": "指导", "description": "释说在教她如何'在说话中修行'——对于暂时无法沉默的人，正确的说话是次优选择。" },
+        { "targetId": "blessed_silence", "type": "敬仰", "description": "她敬畏不语僧——不是因为他的沉默，是因为他的存在不需要语言来确认。" }
+      ] },
+    { "id": "cheng_xin", "name": "澄心", "title": "契约语言研究员", "sect": "净言寺", "realm": "金丹", "locationId": "loc_jingyan_forest", "avatar": "📝", "description": "净言寺中研究契灵术契约语言学的修士。她发现契约的稳定程度与契约文本的语言精确度存在直接正相关。她的内部研究报告显示：'合同精确度越高，契约反噬率越低。'她本人不签订契约——她只是研究语言在契约中的作用。她说：'契灵术的核心是语言行为。不理解语言就理解不了契灵术。'", "personality": "严谨、好奇、在净言寺中少有的对契灵术持开放态度的人。", "affinity": 55, "questIds": [],
+      "relationships": [
+        { "targetId": "tan_buyu", "type": "跨领域合作", "description": "与万象阁的檀不语合作研究契约语言与言灵的关系。" },
+        { "targetId": "shi_shuo", "type": "同门", "description": "在言灵理论研究上互为补充。" }
+      ] },
+    { "id": "jing_zhu", "name": "静竹", "title": "守律者", "sect": "净言寺", "realm": "金丹", "locationId": "loc_jingyan_gate", "avatar": "🎋", "description": "净言寺的戒律监督者。她的工作是确保寺内修士遵守言语戒律——包括静默期的时长、言诺的真实性、日常言语的精确度。她不是执法者——她更像是'提醒者'。她会在一个修士即将说出不精确的话之前轻轻敲一下竹子。她说：'我不是在监视他们——我是在保护他们不被自己的言语伤害。'", "personality": "安静、专注、存在感不强但无处不在。", "affinity": 45, "questIds": [],
+      "relationships": [
+        { "targetId": "su_nian", "type": "治愈尝试", "description": "曾尝试用止语帮助苏念找回内核。" },
+        { "targetId": "po_nuo", "type": "守律者与违诺者", "description": "她理解破诺的选择但不认同。两人之间存在一种紧张但相互尊重的关系。" }
+      ] }
+  ],
+  "factions": [
+    { "id": "tianyuan_kaoji", "name": "天渊宗考据派", "sect": "天渊宗", "members": ["lu_mingyi"], "description": "通过典籍研究、古法考证来理解修炼。认为知识保存在书中。", "color": "#5eb3e8" },
+    { "id": "tianyuan_sibian", "name": "天渊宗思辨派", "sect": "天渊宗", "members": ["qiu_li", "shang_shixu"], "description": "通过辩论、质疑、逻辑推演来逼近真理。认为知识产生于思考中。", "color": "#3d8ec9" },
+    { "id": "guiyi_chuncui", "name": "归一教纯粹派", "sect": "归一教", "members": ["yin_buping"], "description": "主张废除所有功法，只用基础修炼。认为功法是人工的辅助工具。", "color": "#8b6fe0" },
+    { "id": "guiyi_gongfa", "name": "归一教功法派", "sect": "归一教", "members": ["qin_che"], "description": "认为功法是经过数万年验证的捷径。拒绝功法是傲慢。", "color": "#a78bfa" },
+    { "id": "jingyan_chenmo", "name": "净言寺沉默派", "sect": "净言寺", "members": ["blessed_silence", "jing_zhu"], "description": "通过沉默积累言灵的力量。认为语言的最高形式是不用语言。", "color": "#b8944a" },
+    { "id": "jingyan_yanyu", "name": "净言寺言语派", "sect": "净言寺", "members": ["shi_shuo", "cheng_xin"], "description": "通过精确使用语言来修行。认为沉默只是工具，不是终点。", "color": "#c9a059" }
+  ]
+}
