@@ -1,19 +1,24 @@
 # 🗺️ 世界地图
 
-<script src="/data/map-data.js"></script>
-<script src="/data/map-view.js"></script>
-<div id="map-container" style="width:100%;height:600px;background:#1a1a24;border-radius:4px;overflow:hidden;position:relative;"></div>
-
-<div id="map-info" style="margin-top:12px;padding:12px 16px;background:var(--md-code-bg-color);border-radius:6px;border-left:4px solid #c9a059;min-height:60px;">
-  <span style="color:var(--md-default-fg-color--light);">点击地图上的标记点查看地点详情、人物和任务</span>
+<div id="map-toolbar" style="display:flex;gap:4px;padding:6px 10px;background:#1a1a24;border-bottom:1px solid rgba(255,255,255,0.08);flex-wrap:wrap;"></div>
+<div id="map-wrapper" style="display:flex;flex:1;overflow:hidden;background:#1a1a24;min-height:500px;position:relative;">
+  <div id="map-svg-area" style="flex:1;position:relative;min-width:150px;"></div>
+  <div id="map-info" style="width:320px;max-width:35%;min-width:200px;overflow-y:auto;border-left:1px solid rgba(255,255,255,0.08);padding:12px 14px;color:#d4cfc4;font-size:13px;flex-shrink:0;"></div>
 </div>
 
+<script src="../data/map-view.js"></script>
 <script>
-// 加载地图数据
+var mapContainer = document.getElementById('map-svg-area');
+var mapInfo = document.getElementById('map-info');
+
+// 修正过的路径 mapData 
+var basePath = window.location.pathname.replace(/\/地图\/.*$/, '');
 Promise.all([
-  fetch('/data/world-map.json').then(r=>r.json()),
-  fetch('/data/人物志数据.json').then(r=>r.json())
-]).then(([mapData, charData]) => {
-  initMap('map-container', 'map-info', mapData, charData);
+  fetch(basePath + '/data/world-map.json').then(function(r) { return r.json(); }),
+  fetch(basePath + '/data/人物志数据.json').then(function(r) { return r.json(); })
+]).then(function(results) {
+  initMap('map-svg-area', 'map-info', results[0], results[1]);
+}).catch(function(err) {
+  document.getElementById('map-info').innerHTML = '地图加载失败: ' + err.message;
 });
 </script>
