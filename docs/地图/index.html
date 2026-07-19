@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🗺️ 世界地图 — 修仙·契灵 设定集</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; background: #1a1a24; color: #d4cfc4; font-family: "Noto Serif SC", "SimSun", serif; overflow: hidden; }
+#app { display: flex; flex-direction: column; height: 100%; }
+#toolbar { display: flex; align-items: center; gap: 12px; padding: 6px 16px; border-bottom: 1px solid rgba(255,255,255,0.08); flex-shrink: 0; }
+#toolbar .title { font-size: 14px; font-weight: bold; color: #c9a059; }
+#toolbar .nav a { color: rgba(212,207,196,0.5); text-decoration: none; font-size: 12px; }
+#toolbar .nav a:hover { color: #c9a059; }
+#filters { display: flex; gap: 4px; margin-left: auto; }
+.filter-btn { background: transparent; color: rgba(212,207,196,0.5); border: 1px solid rgba(255,255,255,0.08); padding: 3px 10px; border-radius: 4px; cursor: pointer; font-size: 12px; font-family: inherit; }
+.filter-btn.active { background: #5e8b7c; color: #fff; border-color: #5e8b7c; }
+#main { display: flex; flex: 1; overflow: hidden; }
+#map-area { flex: 1; position: relative; overflow: hidden; min-width: 150px; }
+#info-area { width: 320px; max-width: 35%; min-width: 200px; overflow-y: auto; border-left: 1px solid rgba(255,255,255,0.08); padding: 12px 14px; flex-shrink: 0; font-size: 13px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="toolbar">
+    <span class="title">🗺️ 世界地图</span>
+    <span class="nav"><a href="../">首页</a></span>
+    <div id="filters"></div>
+  </div>
+  <div id="main">
+    <div id="map-area"></div>
+    <div id="info-area">加载中...</div>
+  </div>
+</div>
+<script src="../data/map-view.js"></script>
+<script>
+// 获取正确的 basePath
+var basePath = window.location.pathname.replace(/\/地图\/.*$/, '') || '';
+function loadJSON(url) {
+  return fetch(basePath + url).then(function(r) {
+    if (!r.ok) throw new Error(r.status + ' ' + r.statusText);
+    return r.json();
+  });
+}
+Promise.all([
+  loadJSON('/data/world-map.json'),
+  loadJSON('/data/人物志数据.json')
+]).then(function(data) {
+  initMap('map-area', 'info-area', data[0], data[1], 'filters');
+}).catch(function(err) {
+  document.getElementById('info-area').innerHTML = '加载失败: ' + err.message;
+});
+</script>
+</body>
+</html>
