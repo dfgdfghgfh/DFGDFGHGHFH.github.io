@@ -34,17 +34,10 @@ html, body { height: 100%; background: #1a1a24; color: #d4cfc4; font-family: "No
 </div>
 <script src="../data/map-view.js"></script>
 <script>
-// 获取正确的 basePath
-var basePath = window.location.pathname.replace(/\/地图\/.*$/, '') || '';
-function loadJSON(url) {
-  return fetch(basePath + url).then(function(r) {
-    if (!r.ok) throw new Error(r.status + ' ' + r.statusText);
-    return r.json();
-  });
-}
+// 使用相对路径（地图页在 地图/，数据文件在 data/）
 Promise.all([
-  loadJSON('/data/world-map.json'),
-  loadJSON('/data/人物志数据.json')
+  fetch('../data/world-map.json').then(function(r) { if(!r.ok) throw new Error(r.status); return r.json(); }),
+  fetch('../data/人物志数据.json').then(function(r) { if(!r.ok) throw new Error(r.status); return r.json(); })
 ]).then(function(data) {
   initMap('map-area', 'info-area', data[0], data[1], 'filters');
 }).catch(function(err) {
