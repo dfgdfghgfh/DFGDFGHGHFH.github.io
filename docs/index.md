@@ -54,7 +54,7 @@
     
     五宗门领地 · 秘境 · 危险区 · 人物分布
     
-    [:octicons-arrow-right-24: 探索地图](地图/index.md)
+    [:octicons-arrow-right-24: 探索地图](ditu/index.html)
 
 -   :material-account-group: __人物谱__
     
